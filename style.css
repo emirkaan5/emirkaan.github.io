@@ -1,0 +1,74 @@
+body {
+  background-color: #36516E;
+}
+
+#container {
+  background-color: #CAC0B8;
+  /* width: 95vw;*/
+  height: 75vh;
+
+  margin:1vw;
+  padding-left:4vw;
+  padding-top: 25vh;
+  padding-right:5vw;
+  /* margin: auto; */
+}
+
+.fade-div {
+  opacity: 0;
+  transition: opacity 2s ease-out, transform 3s ease-out;
+  transform: translateY(20px); /* Start slightly lower */
+  position: absolute; /* Stack the divs on top of each other */
+}
+
+.fade-div.active {
+  opacity: 1;
+  transform: translateY(0); /* Move into place */
+}
+
+h1 {
+  font-size: 48px;
+  font-family: 'Anonymous Pro', monospace;
+  text-align: left;
+}
+
+h5 {
+  font-size : 30px;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 400;
+  margin-right: 5;
+}
+
+p {
+  font-size : 40px;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+.anonymous-pro-regular {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anonymous-pro-bold {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.anonymous-pro-regular-italic {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.anonymous-pro-bold-italic {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
